@@ -1,0 +1,65 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scenes/Main.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/GameScenes/GameScene00.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/MenuScenes/MainMenuScene.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Menus/00_BaseMenuScene.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/GameScenes/GameScene01.tscn" type="PackedScene" id=6]
+
+[sub_resource type="OpenSimplexNoise" id=1]
+
+[sub_resource type="NoiseTexture" id=2]
+noise = SubResource( 1 )
+
+[node name="Main" type="Node"]
+pause_mode = 2
+script = ExtResource( 1 )
+game_scene_array = [ ExtResource( 2 ), ExtResource( 6 ) ]
+menu_scene_array = [ ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ) ]
+scene_transition_mode = 2
+scene_transition_direction = 1
+scene_transition_color = Color( 0.172549, 0.168627, 0.509804, 1 )
+scene_transition_texture = SubResource( 2 )
+scene_transition_out_delay = 0.0
+scene_transition_in_delay = 0.0
+tween_transition_type = 3
+
+[node name="SceneTransitionTween" type="Tween" parent="."]
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="GameSceneLayer" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="MenuSceneLayer" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="Control" parent="MenuSceneLayer" instance=ExtResource( 4 )]
+
+[node name="ForegroundLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="ColorRect" type="ColorRect" parent="ForegroundLayer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 1.05946
+margin_bottom = 1.05945
+color = Color( 1, 1, 1, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="ForegroundLayer"]
+visible = false
+margin_left = 255.368
+margin_top = 243.023
+margin_right = 2175.37
+margin_bottom = 1323.02
+flip_v = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="tween_all_completed" from="SceneTransitionTween" to="." method="_on_SceneTransitionTween_tween_all_completed"]

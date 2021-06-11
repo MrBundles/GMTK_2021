@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://TestButton.gd" type="Script" id=1]
+
+[node name="GameScene" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1915.0
+margin_bottom = 1076.0
+color = Color( 0.0627451, 0.756863, 0.72549, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+text = "Go to scene 1"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+new_game_scene_id = 1
+new_menu_scene_id = 0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 496.0
+margin_top = 109.0
+margin_right = 643.0
+margin_bottom = 123.0
+text = "This is the game scene 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
