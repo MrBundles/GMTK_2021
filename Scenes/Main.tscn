@@ -1,25 +1,44 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scenes/Main.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/GameScenes/GameScene00.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/MenuScenes/MainMenuScene.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Menus/00_BaseMenuScene.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/GameScenes/GameScene01.tscn" type="PackedScene" id=6]
+[ext_resource path="res://TestButton.gd" type="Script" id=5]
 
-[sub_resource type="OpenSimplexNoise" id=1]
+[sub_resource type="PackedScene" id=1]
+_bundled = {
+"conn_count": 1,
+"conns": PoolIntArray( 1073741828, 1073741827, 25, 24, 2, 0 ),
+"editable_instances": [  ],
+"names": PoolStringArray( "GameScene", "Node2D", "ColorRect", "ColorRect", "margin_right", "margin_bottom", "color", "__meta__", "Button", "Button", "margin_right", "margin_bottom", "text", "script", "__meta__", "new_menu_scene_id", "Label", "Label", "margin_left", "margin_top", "margin_right", "margin_bottom", "text", "__meta__", "_on_Button_pressed", "pressed" ),
+"node_count": 4,
+"node_paths": [ NodePath("."), NodePath("."), NodePath("."), NodePath("Button"), NodePath("Button") ],
+"nodes": PoolIntArray( -1, -1, 1, 0, -1, 0, 0, 1073741824, 0, 3, 2, -1, 4, 4, 0, 5, 1, 6, 2, 7, 3, 0, 1073741825, 0, 9, 8, -1, 6, 10, 4, 11, 5, 12, 6, 13, 7, 14, 8, 15, 9, 0, 1073741826, 0, 17, 16, -1, 6, 18, 10, 19, 11, 20, 12, 21, 13, 22, 14, 23, 15, 0 ),
+"variants": [ 1921.0, 1070.0, Color( 0.960784, 0.0862745, 0.0862745, 1 ), {
+"_edit_use_anchors_": false
+}, 101.0, 20.0, "Go to scene 0", ExtResource( 5 ), {
+"_edit_use_anchors_": false
+}, 0, 333.0, 143.0, 467.0, 157.0, "This is game scene 1", {
+"_edit_use_anchors_": false
+} ],
+"version": 2
+}
 
-[sub_resource type="NoiseTexture" id=2]
-noise = SubResource( 1 )
+[sub_resource type="OpenSimplexNoise" id=2]
+
+[sub_resource type="NoiseTexture" id=3]
+noise = SubResource( 2 )
 
 [node name="Main" type="Node"]
 pause_mode = 2
 script = ExtResource( 1 )
-game_scene_array = [ ExtResource( 2 ), ExtResource( 6 ) ]
+game_scene_array = [ ExtResource( 2 ), SubResource( 1 ) ]
 menu_scene_array = [ ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ) ]
 scene_transition_mode = 2
 scene_transition_direction = 1
 scene_transition_color = Color( 0.172549, 0.168627, 0.509804, 1 )
-scene_transition_texture = SubResource( 2 )
+scene_transition_texture = SubResource( 3 )
 scene_transition_out_delay = 0.0
 scene_transition_in_delay = 0.0
 tween_transition_type = 3
@@ -29,37 +48,23 @@ tween_transition_type = 3
 [node name="BackgroundLayer" type="CanvasLayer" parent="."]
 layer = -1
 
+[node name="ColorRect" type="ColorRect" parent="BackgroundLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 1, 0.6, 0.784314, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="GameSceneLayer" type="CanvasLayer" parent="."]
 layer = 0
+
+[node name="GameScene" parent="GameSceneLayer" instance=ExtResource( 2 )]
 
 [node name="MenuSceneLayer" type="CanvasLayer" parent="."]
 layer = 0
 
 [node name="Control" parent="MenuSceneLayer" instance=ExtResource( 4 )]
-
-[node name="ForegroundLayer" type="CanvasLayer" parent="."]
-layer = 2
-
-[node name="ColorRect" type="ColorRect" parent="ForegroundLayer"]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = 1.05946
-margin_bottom = 1.05945
-color = Color( 1, 1, 1, 0 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect" type="TextureRect" parent="ForegroundLayer"]
-visible = false
-margin_left = 255.368
-margin_top = 243.023
-margin_right = 2175.37
-margin_bottom = 1323.02
-flip_v = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [connection signal="tween_all_completed" from="SceneTransitionTween" to="." method="_on_SceneTransitionTween_tween_all_completed"]

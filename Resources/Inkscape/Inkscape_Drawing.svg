@@ -7,40 +7,43 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="Inkscape_Drawing.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 210 297"
+   width="210mm"
    height="297mm"
-   width="210mm">
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="Inkscape_Drawing.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
-     inkscape:window-maximized="1"
-     inkscape:window-y="215"
-     inkscape:window-x="2391"
-     inkscape:window-height="1001"
-     inkscape:window-width="1920"
-     showgrid="true"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="mm"
-     inkscape:cy="289.25886"
-     inkscape:cx="299.33057"
-     inkscape:zoom="1.9326961"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-global="true"
+     id="base"
      pagecolor="#ffffff"
-     id="base">
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.93364238"
+     inkscape:cx="723.03118"
+     inkscape:cy="359.1237"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="2391"
+     inkscape:window-y="215"
+     inkscape:window-maximized="1">
     <inkscape:grid
-       empspacing="4"
-       spacingy="4.2333333"
-       spacingx="4.2333333"
+       type="xygrid"
        id="grid833"
-       type="xygrid" />
+       spacingx="4.2333333"
+       spacingy="4.2333333"
+       empspacing="2" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -50,33 +53,450 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     id="layer1">
+    <rect
+       style="fill:#ff00ff;fill-opacity:1;stroke-width:1.50107;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect849"
+       width="2192.8665"
+       height="1447.8"
+       x="-25.4"
+       y="-25.4"
+       ry="16.834885"
+       sodipodi:insensitive="true" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.529168;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect839"
+       width="33.866665"
+       height="33.866669"
+       x="93.133331"
+       y="33.866665"
+       ry="1.5135254e-06"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Entities\Characters\Player\PlayerBody.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
     <rect
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\_Jam_Template\transition_rect_2.png"
-       y="67.73333"
-       x="67.73333"
-       height="16.933332"
-       width="16.933332"
-       id="rect835"
-       style="fill:#ff00ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;fill-opacity:1" />
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\color_tiles.png"
+       style="fill:#ff99c8;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect851"
+       width="33.866665"
+       height="33.866665"
+       x="355.60001"
+       y="50.799999"
+       ry="3.6293943e-07" />
     <rect
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\_Jam_Template\transition_rect_1.png"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\color_tiles.png"
+       ry="3.6293943e-07"
+       y="50.799999"
+       x="389.46667"
+       height="33.866665"
+       width="33.866665"
+       id="rect853"
+       style="fill:#fcf6bd;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\color_tiles.png"
+       style="fill:#d0f4de;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect855"
+       width="33.866665"
+       height="33.866665"
+       x="423.33334"
+       y="50.799999"
+       ry="3.6293943e-07" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\color_tiles.png"
+       ry="3.6293943e-07"
+       y="50.799999"
+       x="457.19998"
+       height="33.866665"
+       width="33.866665"
+       id="rect857"
+       style="fill:#a9def9;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\color_tiles.png"
+       style="fill:#e4c1f9;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect859"
+       width="33.866665"
+       height="33.866665"
+       x="491.06665"
+       y="50.799999"
+       ry="3.6293943e-07" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\gray_tiles.png"
+       ry="3.6293943e-07"
+       y="84.666664"
+       x="355.60001"
+       height="33.866665"
+       width="33.866665"
+       id="rect861"
+       style="fill:#e0fbfc;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\gray_tiles.png"
+       style="fill:#c2dfe3;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect863"
+       width="33.866665"
+       height="33.866665"
+       x="389.46667"
+       y="84.666664"
+       ry="3.6293943e-07" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\gray_tiles.png"
+       ry="3.6293943e-07"
+       y="84.666664"
+       x="423.33334"
+       height="33.866665"
+       width="33.866665"
+       id="rect865"
+       style="fill:#9db4c0;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\gray_tiles.png"
+       style="fill:#5c6b73;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect867"
+       width="33.866665"
+       height="33.866665"
+       x="457.19998"
+       y="84.666664"
+       ry="3.6293943e-07" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\gray_tiles.png"
+       ry="3.6293943e-07"
+       y="84.666664"
+       x="491.06665"
+       height="33.866665"
+       width="33.866665"
+       id="rect869"
+       style="fill:#253237;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       ry="1.8146973e-07"
+       y="50.799999"
+       x="524.93335"
+       height="16.933334"
+       width="33.866665"
+       id="rect871"
+       style="fill:#ff99c8;fill-opacity:1;stroke-width:0.187088;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       style="fill:#fcf6bd;fill-opacity:1;stroke-width:0.187088;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect873"
+       width="33.866665"
+       height="16.933334"
+       x="558.79999"
+       y="50.799999"
+       ry="1.8146973e-07" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       ry="1.8146973e-07"
+       y="50.799999"
+       x="592.66669"
+       height="16.933334"
+       width="33.866665"
+       id="rect875"
+       style="fill:#d0f4de;fill-opacity:1;stroke-width:0.187088;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       style="fill:#a9def9;fill-opacity:1;stroke-width:0.187088;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect877"
+       width="33.866665"
+       height="16.933334"
+       x="626.53333"
+       y="50.799999"
+       ry="1.8146973e-07" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       ry="1.8146973e-07"
+       y="50.799999"
+       x="660.39996"
+       height="16.933334"
+       width="33.866665"
+       id="rect879"
+       style="fill:#e4c1f9;fill-opacity:1;stroke-width:0.187088;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_gray_tiles.png"
+       style="fill:#e0fbfc;fill-opacity:1;stroke-width:0.136095;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect881"
+       width="33.866638"
+       height="16.933336"
+       x="524.93335"
+       y="84.666664"
+       ry="1.8146976e-07" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_gray_tiles.png"
+       ry="1.8146976e-07"
+       y="84.666664"
+       x="558.79999"
+       height="16.933336"
+       width="33.866638"
+       id="rect883"
+       style="fill:#c2dfe3;fill-opacity:1;stroke-width:0.136095;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_gray_tiles.png"
+       style="fill:#9db4c0;fill-opacity:1;stroke-width:0.136095;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect885"
+       width="33.866638"
+       height="16.933336"
+       x="592.66669"
+       y="84.666664"
+       ry="1.8146976e-07" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_gray_tiles.png"
+       ry="1.8146976e-07"
+       y="84.666664"
+       x="626.53333"
+       height="16.933336"
+       width="33.866699"
+       id="rect887"
+       style="fill:#5c6b73;fill-opacity:1;stroke-width:0.136095;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_gray_tiles.png"
+       style="fill:#253237;fill-opacity:1;stroke-width:0.136095;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect889"
+       width="33.866699"
+       height="16.933336"
+       x="660.39996"
+       y="84.666664"
+       ry="1.8146976e-07" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
        y="67.73333"
-       x="101.6"
+       x="524.93335"
        height="16.933332"
-       width="16.933332"
-       id="rect837"
-       style="fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+       width="33.866665"
+       id="rect866"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect868"
+       width="33.866665"
+       height="16.933332"
+       x="524.93335"
+       y="67.73333" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect870"
+       width="33.866665"
+       height="16.933332"
+       x="558.79999"
+       y="67.73333" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       y="67.73333"
+       x="558.79999"
+       height="16.933332"
+       width="33.866665"
+       id="rect872"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       y="67.73333"
+       x="592.66669"
+       height="16.933332"
+       width="33.866665"
+       id="rect874"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect876"
+       width="33.866665"
+       height="16.933332"
+       x="592.66669"
+       y="67.73333" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect878"
+       width="33.866665"
+       height="16.933332"
+       x="626.53333"
+       y="67.73333" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       y="67.73333"
+       x="626.53333"
+       height="16.933332"
+       width="33.866665"
+       id="rect880"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       y="67.73333"
+       x="660.40002"
+       height="16.933332"
+       width="33.866665"
+       id="rect882"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_color_tiles.png"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect884"
+       width="33.866665"
+       height="16.933332"
+       x="660.40002"
+       y="67.73333" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_gray_tiles.png"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect886"
+       width="33.866665"
+       height="16.933332"
+       x="524.93335"
+       y="101.6" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_gray_tiles.png"
+       y="101.6"
+       x="524.93335"
+       height="16.933332"
+       width="33.866665"
+       id="rect888"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_gray_tiles.png"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect890"
+       width="33.866665"
+       height="16.933332"
+       x="558.79999"
+       y="101.6" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_gray_tiles.png"
+       y="101.6"
+       x="592.66669"
+       height="16.933332"
+       width="33.866665"
+       id="rect892"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_gray_tiles.png"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect894"
+       width="33.866665"
+       height="16.933332"
+       x="626.53333"
+       y="101.6" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Resources\Tilemaps\ow_gray_tiles.png"
+       y="101.6"
+       x="660.40002"
+       height="16.933332"
+       width="33.866665"
+       id="rect896"
+       style="fill:#ffff00;fill-opacity:0;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <ellipse
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Entities\Characters\ChainLink\ChainLink.png"
+       ry="8.4666662"
+       rx="8.4666653"
+       cy="42.333332"
+       cx="160.86667"
+       id="path898"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Entities\Characters\Player\Plug.png"
+       ry="1.5135251e-06"
+       y="84.666664"
+       x="97.366661"
+       height="33.866665"
+       width="8.4666681"
+       id="rect900"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect902"
+       width="8.4666624"
+       height="33.866665"
+       x="114.3"
+       y="84.666664"
+       ry="1.5135251e-06"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\GMTK\GMTK_2021\Entities\Characters\Player\Plug.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       transform="scale(0.26458333)"
+       d="m 112,128 v 16 h 64 v 32 h -64 v 32 h 64 v 32 h -64 v 16 H 240 V 128 Z"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:2.00001;stroke-linecap:round;stroke-linejoin:bevel"
+       id="rect904" />
   </g>
 </svg>
