@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Entities/Characters/Player/Player.gd" type="Script" id=2]
 [ext_resource path="res://Entities/Characters/Player/plug_sprites/plug_single_square.png" type="Texture" id=4]
@@ -16,6 +16,9 @@
 [ext_resource path="res://Entities/Characters/Player/socket_sprites/socket_single_circle.png" type="Texture" id=16]
 [ext_resource path="res://Entities/Characters/Player/socket_sprites/socket_double_square.png" type="Texture" id=17]
 
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 4, 8 )
+
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 31.95, 31.95 )
 
@@ -27,7 +30,8 @@ modulate = Color( 1, 0.6, 0.784314, 1 )
 z_index = 1
 script = ExtResource( 2 )
 color = Color( 1, 0.6, 0.784314, 1 )
-plug_type = 4
+socket_type = 3
+plug_type = 2
 socket_sprites = [ ExtResource( 8 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 12 ), ExtResource( 13 ) ]
 plug_sprites = [ ExtResource( 9 ), ExtResource( 4 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 7 ) ]
 velocity_max = Vector2( 30, 150 )
@@ -37,7 +41,21 @@ squish_min = Vector2( 1, 1 )
 squish_max = Vector2( 1.75, 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 15 )
+texture = ExtResource( 16 )
+
+[node name="PlugZone" type="Area2D" parent="Sprite" groups=[
+"plug",
+]]
+position = Vector2( -40, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/PlugZone"]
+shape = SubResource( 5 )
+
+[node name="PlugZonePosition" type="Position2D" parent="Sprite"]
+position = Vector2( -64, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
@@ -45,14 +63,14 @@ shape = SubResource( 1 )
 [node name="PlugPivot" type="Position2D" parent="."]
 
 [node name="PlugSprite" type="Sprite" parent="PlugPivot"]
-position = Vector2( 32, 0 )
-rotation = 1.5708
 texture = ExtResource( 10 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 2 )
+
+[node name="Node2D" type="Node2D" parent="."]
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_Area2D_area_exited"]
