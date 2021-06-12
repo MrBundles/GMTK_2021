@@ -13,6 +13,7 @@ signal set_bus_mute					# bus_id, new_val
 #		scene management signals
 signal change_scene					# new_game_scene_id, new_menu_scene_id
 
+signal plugged_in					# plug id, socket id
 
 # variables -------------------------------------------------------------------
 

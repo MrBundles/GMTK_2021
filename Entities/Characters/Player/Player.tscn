@@ -1,11 +1,23 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=18 format=2]
 
-[ext_resource path="res://Entities/Characters/Player/PlayerBody.png" type="Texture" id=1]
 [ext_resource path="res://Entities/Characters/Player/Player.gd" type="Script" id=2]
-[ext_resource path="res://Entities/Characters/Player/Plug.png" type="Texture" id=3]
+[ext_resource path="res://Entities/Characters/Player/plug_sprites/plug_single_square.png" type="Texture" id=4]
+[ext_resource path="res://Entities/Characters/Player/plug_sprites/plug_single_circle.png" type="Texture" id=5]
+[ext_resource path="res://Entities/Characters/Player/plug_sprites/plug_double_triangle.png" type="Texture" id=6]
+[ext_resource path="res://Entities/Characters/Player/plug_sprites/plug_double_circle.png" type="Texture" id=7]
+[ext_resource path="res://Entities/Characters/Player/socket_sprites/socket_none.png" type="Texture" id=8]
+[ext_resource path="res://Entities/Characters/Player/plug_sprites/plug_none.png" type="Texture" id=9]
+[ext_resource path="res://Entities/Characters/Player/plug_sprites/plug_single_triangle.png" type="Texture" id=10]
+[ext_resource path="res://Entities/Characters/Player/plug_sprites/plug_double_square.png" type="Texture" id=11]
+[ext_resource path="res://Entities/Characters/Player/socket_sprites/socket_double_triangle.png" type="Texture" id=12]
+[ext_resource path="res://Entities/Characters/Player/socket_sprites/socket_double_circle.png" type="Texture" id=13]
+[ext_resource path="res://Entities/Characters/Player/socket_sprites/socket_single_square.png" type="Texture" id=14]
+[ext_resource path="res://Entities/Characters/Player/socket_sprites/socket_single_triangle.png" type="Texture" id=15]
+[ext_resource path="res://Entities/Characters/Player/socket_sprites/socket_single_circle.png" type="Texture" id=16]
+[ext_resource path="res://Entities/Characters/Player/socket_sprites/socket_double_square.png" type="Texture" id=17]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 31, 31 )
+extents = Vector2( 31.95, 31.95 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 32, 32 )
@@ -15,6 +27,9 @@ modulate = Color( 1, 0.6, 0.784314, 1 )
 z_index = 1
 script = ExtResource( 2 )
 color = Color( 1, 0.6, 0.784314, 1 )
+plug_type = 4
+socket_sprites = [ ExtResource( 8 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 12 ), ExtResource( 13 ) ]
+plug_sprites = [ ExtResource( 9 ), ExtResource( 4 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 7 ) ]
 velocity_max = Vector2( 30, 150 )
 accel = Vector2( 5, 53 )
 decel = Vector2( 3, 2 )
@@ -22,7 +37,7 @@ squish_min = Vector2( 1, 1 )
 squish_max = Vector2( 1.75, 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 1 )
+texture = ExtResource( 15 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
@@ -30,8 +45,9 @@ shape = SubResource( 1 )
 [node name="PlugPivot" type="Position2D" parent="."]
 
 [node name="PlugSprite" type="Sprite" parent="PlugPivot"]
-position = Vector2( 0, 32 )
-texture = ExtResource( 3 )
+position = Vector2( 32, 0 )
+rotation = 1.5708
+texture = ExtResource( 10 )
 
 [node name="Area2D" type="Area2D" parent="."]
 

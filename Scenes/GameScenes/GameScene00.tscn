@@ -1,11 +1,11 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Entities/Characters/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Resources/Tilemaps/color_tiles.png" type="Texture" id=2]
 [ext_resource path="res://Resources/Tilemaps/gray_tiles.png" type="Texture" id=3]
 [ext_resource path="res://Resources/Tilemaps/ow_color_tiles.png" type="Texture" id=4]
 [ext_resource path="res://Resources/Tilemaps/ow_gray_tiles.png" type="Texture" id=5]
-[ext_resource path="res://Entities/Characters/ChainLink/ChainLink.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Entities/Objects/Plug/Plug.tscn" type="PackedScene" id=7]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -489,65 +489,30 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 } ]
 19/z_index = 0
 
-[sub_resource type="Curve2D" id=22]
-_data = {
-"points": PoolVector2Array(  )
-}
-
-[sub_resource type="NavigationPolygon" id=23]
-
 [node name="GameScene" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 modulate = Color( 0.878431, 0.984314, 0.988235, 1 )
 position = Vector2( 1072, 320 )
 color = Color( 0.878431, 0.984314, 0.988235, 1 )
-velocity_max = Vector2( 30, 150 )
-accel = Vector2( 5, 53 )
-decel = Vector2( 3, 2 )
 squish_max = Vector2( 1.5, 3 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 21 )
 format = 1
-tile_data = PoolIntArray( 393228, 11, 0, 393229, 11, 0, 393230, 11, 0, 393231, 11, 0, 393232, 11, 0, 393236, 8, 0, 393237, 8, 0, 458758, 8, 0, 458759, 8, 0, 458760, 8, 0, 458768, 1, 0, 458771, 8, 0, 458772, 8, 0, 524296, 8, 0, 524307, 8, 0, 589833, 8, 0, 589843, 8, 0, 655369, 8, 0, 655370, 8, 0, 655371, 8, 0, 655372, 8, 0, 655373, 8, 0, 655374, 8, 0, 655375, 8, 0, 655376, 8, 0, 655377, 8, 0, 655378, 8, 0, 655379, 8, 0 )
+tile_data = PoolIntArray( 393228, 11, 0, 393229, 11, 0, 393230, 11, 0, 393231, 11, 0, 393232, 11, 0, 393236, 8, 0, 393237, 8, 0, 458758, 8, 0, 458759, 8, 0, 458760, 8, 0, 458768, 1, 0, 458771, 8, 0, 458772, 8, 0, 524296, 8, 0, 524303, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 8, 0, 589833, 8, 0, 589843, 8, 0, 655369, 8, 0, 655370, 8, 0, 655371, 8, 0, 655372, 8, 0, 655373, 8, 0, 655375, 8, 0, 655376, 8, 0, 655377, 8, 0, 655378, 8, 0, 655379, 8, 0 )
 
-[node name="ChainLink" parent="." instance=ExtResource( 6 )]
-visible = false
-position = Vector2( 1024, 320 )
-gravity_scale = 1.0
+[node name="Plug" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1184, 608 )
 
-[node name="ChainLink2" parent="." instance=ExtResource( 6 )]
-visible = false
-position = Vector2( 992, 320 )
-gravity_scale = 1.0
+[node name="Plug2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 928, 672 )
+rotation = 1.57079
 
-[node name="ChainLink3" parent="." instance=ExtResource( 6 )]
-visible = false
-position = Vector2( 960, 320 )
-gravity_scale = 1.0
+[node name="Plug3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 672, 608 )
+rotation = 3.14159
 
-[node name="ChainJoint" type="PinJoint2D" parent="."]
-position = Vector2( 1072, 320 )
-node_a = NodePath("../Player")
-node_b = NodePath("../ChainLink")
-
-[node name="ChainJoint2" type="PinJoint2D" parent="."]
-position = Vector2( 1008, 320 )
-node_a = NodePath("../ChainLink")
-node_b = NodePath("../ChainLink2")
-
-[node name="ChainJoint3" type="PinJoint2D" parent="."]
-position = Vector2( 976, 320 )
-node_a = NodePath("../ChainLink2")
-node_b = NodePath("../ChainLink3")
-
-[node name="Path2D" type="Path2D" parent="."]
-curve = SubResource( 22 )
-
-[node name="Navigation2D" type="Navigation2D" parent="."]
-
-[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="."]
-navpoly = SubResource( 23 )
-
-[node name="Line2D" type="Line2D" parent="."]
+[node name="Plug4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1056, 544 )
+rotation = 4.71238
